@@ -1,0 +1,244 @@
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+    font-family: "Helvetica Neue";
+    font-weight: lighter;
+
+    text-align: center;
+    margin:10px 0 0 0;
+    padding:0;
+    font-size: 10px;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#unlockScreen {
+    margin-top: 40px; /* iOS */
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type=tel] {
+    width: 90%; /* kludge */
+    font-size: 0.8em;
+}
+
+/* webkit appearance is important for iOS */
+input[type=submit] {
+    -webkit-appearance: none;
+    font-size: 0.8em;
+    border-radius: 0;
+}
+
+input[type=button] {
+    -webkit-appearance: none;
+    font-size: 0.8em;
+    border-radius: 0;
+}
+
+button {
+    -webkit-appearance: none;
+    font-size: 1.5em;
+    border-radius: 0;
+}
+
+#choiceButton {
+    width: 80%;
+    height: 30px;
+}
+
+form {
+    margin: 30px;
+    font-size: 2em;
+}
+
+
+#statusDiv {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#scrim {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color:rgba(128,128,160,0.5);
+    z-index: 15;
+}
+
+#scrim p {
+    font-size: 1.5em;
+    margin-top: 80%;
+    -webkit-animation: pulsate 2s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 1.0
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+}
+
+@-webkit-keyframes pulsate {
+    0% {opacity: 1.0;}
+    50% {opacity: 0.4;}
+    100% {opacity: 1.0;}
+}
+
+ul li {
+    border-top: 1px solid black;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9em;
+}
+
+ul > li:last-child {
+    border-bottom: 1px solid black;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+#bottomButton {
+    position:absolute;
+    bottom:0;
+    margin:0;    
+    width: 100%;
+    height: 15%;
+    border-top: 1px solid black;
+}
+#bottomButton ul {
+    width:100%;
+    height:100%;    
+    padding:0;
+    margin:0;
+}
+#bottomButton ul li {
+    position:relative;
+    float:left;
+    width: 32.6%;
+    height:100%;
+    padding:0;
+    margin:0;
+    border:none;
+}
+#bottomButton ul li img {
+    position: absolute;
+    height:50%;
+    width:50%;
+    left:25%;
+    top:25%;
+}
+#programScreen p {
+    font-size:12px;
+
+}
+
+#pChoose {
+    position:absolute;
+    top: 83px;
+    left:13%;
+    font-size: 12px;
+}
+#pChoose2 {
+    position:absolute;
+    top:125px;  
+    left:1%;
+}
+#pChoose3 {
+    position:absolute;
+    top: 125px;
+    left:46%;
+}
+#programScreen form {
+    position:relative;
+      
+}
+#programScreen form ul {
+    position:relative;
+    display:inline-block;
+    left:30%;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+#programScreen form ul li {
+    float:left;
+    border: none;
+}
+#confirmDailyTime {
+    position:absolute;
+    background-color: #F8F8F8;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin:0;
+    padding:2px;
+    width: 20%;
+    margin-left: 2px;
+    top:28%;
+    font-size: 13px;
+}
+#selectWeeklyDay {
+    position:relative;
+    top: 50%;
+    left:30%;
+}
+#selectWeeklyServings {
+    position:relative;
+    top:70%;
+}
+
+#programEditScreen {
+    display:none; //change to none
+    width:100%;
+    margin:0;
+    padding:0;
+}
+#programEditScreen div ul li {
+    position:relative;
+    height:40px;
+    border: 1px solid black;
+    padding-top:20px;
+    margin:0;
+}
+
+#stringDiv {
+    position:relative;
+    width:83%;
+    float:left;    
+}
+
+#deleteDiv {
+    position:relative;
+    width:17%;
+    float:right;
+}
+
+#stringDiv ul li {
+    position: relative;
+    font-size: 20px; 
+    border: 1px solid black;
+    padding-top:20px;
+    padding-left:10px;   
+}
+#deleteDiv ul li img {
+    position: absolute;
+    height:50%;
+    width:50%
+    top:20%;
+    left:8%;
+}
